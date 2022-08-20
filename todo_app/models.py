@@ -25,7 +25,7 @@ class User(models.Model):
 
 class Task(models.Model):
     title = models.CharField(max_length=50)
-    description = models.TextField(null=False, Blank=True)
+    description = models.TextField(null=False, blank=True)
     created_date = models.DateTimeField(auto_now_add=True)
     due_on = models.DateTimeField(default=one_day)
     assigned_to = models.ForeignKey(User, on_delete=models.CASCADE)
