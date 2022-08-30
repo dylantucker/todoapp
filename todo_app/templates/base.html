@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To Do App Project</title>
+    </head>
+    <body>
+        <div>
+            <h1 onclick="location.href='{% url "index" %}'">
+                To Do Tasks
+            </h1>
+        </div>
+        <div>
+            {% block content %}
+            This will be replaced on each page
+            {% endblock %}
+        </div>
+    </body>
+</html>
